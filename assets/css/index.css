@@ -49,7 +49,12 @@ body{
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
+.pt-10{
+    padding-top: 100px;
+}
+.pb-10 {
+    padding-bottom: 100px;
+}
 
 /* Navbar  =========================================================================*/
 .header>i,
@@ -414,10 +419,17 @@ span,
     border-right: 10px solid yellow;
 }
 
+.choose-right {
+    border-left: 10px solid yellow;
+}
+
 @media screen and (max-width:720px) {
     .choose {
         border: none;
     }
+        .choose-right {
+            border: none;
+        }
 }
 
 .enquiry {
@@ -603,3 +615,141 @@ span,
      /* Change icon color on hover */
  }
 
+/* About Us============================================================================================ */
+
+.about-container{
+    height: 300px;
+    background-color: #be9797;
+    /* background-image: url('../img/420.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* shape divider logo */
+.logo-container{
+    position: relative;
+    background-color: #e6dada;
+}
+.custom-shape-divider-top-1724841854 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1724841854 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 86px;
+}
+
+.custom-shape-divider-top-1724841854 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* bottom */
+
+.custom-shape-divider-bottom-1724841998 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1724841998 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 86px;
+}
+
+.custom-shape-divider-bottom-1724841998 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Testimonial */
+
+.testimonial-card {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .card-body {
+    padding: 20px;
+}
+
+.testimonial-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .card-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.rating {
+    margin-bottom: 10px;
+}
+
+.rating i {
+    color: #ffd700;
+    margin-right: 5px;
+}
+
+.far {
+    color: #ccc;
+}
+
+/* Tarif ============================================================================== */
+
+.table-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.table-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+@media (max-width: 767.98px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
+
+.tarif-box{
+    height: 400px;
+    border: 1px solid black;
+    display: block;
+    margin: 10px auto;
+    
+}
