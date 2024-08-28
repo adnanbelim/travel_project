@@ -751,5 +751,5 @@ span,
     border: 1px solid black;
     display: block;
     margin: 10px auto;
-    
+    overflow-y: hidden;
 }
