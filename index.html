@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour & Travel</title>
+
+    <!-- bootstrap icon css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css"
+        integrity="sha512-6f7HT84a/AplPkpSRSKWqbseRTG4aRrhadjZezYQ0oVk/B+nm/US5KzQkyyOyh0Mn9cyDdChRdS9qaxJRHayww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- local CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <div class="header bg-dark d-flex justify-content-between">
+        <!-- Tooltip trigger -->
+        <div class="d-flex p-2 d-lg-none">
+            <i class="bi bi-three-dots px-2" id="tooltip-trigger"></i>
+        </div>
+
+        <!-- Floating box -->
+        <div class="tooltip-content d-lg-none" id="tooltip-content">
+            <i class="bi bi-envelope-at px-2"></i>
+            <span class="fw-bolder">91xxxxxxxxxx</span><br>
+            <i class="bi bi-telephone px-2"></i>
+            <span class="fw-bolder">Demo@gmail.com</span><br>
+            <i class="bi bi-geo-alt px-2"></i>
+            <span class="fw-bolder">Street 01, Behind LIPS, Jodhpur</span>
+        </div>
+        <div class="d-flex p-2 d-lg-block d-none">
+            <i class="bi bi-envelope-at px-2"></i>
+            <span class="fw-bolder">91xxxxxxxxxx</span>
+            <i class="bi bi-telephone px-2"></i>
+            <span class="fw-bolder">Demo@gmail.com</span>
+            <i class="bi bi-geo-alt px-2"></i>
+            <span class="fw-bolder">Street 01, Behind LIPS, Jodhpur</span>
+        </div>
+
+        <!-- Social icons -->
+        <div class="d-flex p-2">
+            <a href=""><i class="bi bi-twitter px-2"></i></a>
+            <a href=""><i class="bi bi-facebook px-2"></i></a>
+            <a href=""><i class="bi bi-whatsapp px-2"></i></a>
+            <a href=""><i class="bi bi-instagram px-2"></i></a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between align-items-center mt-3">
+            <a class="navbar-brand" href="#">Marwad Mirage</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0 px-5 d-flex align-items-center">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Tariff</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Safari</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Holiday</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="custom-btn d-lg-block d-none" role="button">View Trip</button>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="swiper-container slideshow">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="slide-image"style="background-image: url(https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80)">
+                    </div>
+                    <span class="slide-title">Exotic places</span>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="slide-image"style="background-image: url(https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80)">
+                    </div>
+                    <span class="slide-title">Meet ocean</span>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="slide-image"style="background-image: url(https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80)">
+                    </div>
+                    <span class="slide-title">Around the world</span>
+                </div>
+
+            </div>
+
+            <div class="slideshow-pagination"></div>
+
+            <div class="slideshow-navigation">
+                <div class="slideshow-navigation-button prev"><span class="bi bi-chevron-left"></span></div>
+                <div class="slideshow-navigation-button next"><span class="bi bi-chevron-right"></span></div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <div class="side_bar">
+        <ul class="bar">
+            <li class="nav__item">
+                <a href="#" class="icon-link" data-text="WhatsApp">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="icon-link" data-text="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="icon-link" data-text="Twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container-fluid ">
+        <div class="row d-flex justify-content-center">
+            <div
+                class="col-12 col-lg-6 col-md-12 d-flex  flex-column justify-content-center text-justify bg-dark text-light choose">
+
+                <h1 class="pb-2">
+                    Why Choose Us
+                </h1>
+                <p class="py-1 paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis assumenda nulla
+                    accusantium consequatur obcaecati a. Aliquid aliquam odit asperiores doloremque? Eius doloribus
+                    blanditiis ipsa nulla soluta et atque qui, quis ex eveniet? Numquam veniam saepe ipsam facere et,
+                    officiis consectetur voluptas cupiditate. Repudiandae unde illum minus eligendi nemo. Sunt?Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit ex sapiente iste, architecto
+                    sunt dolorem deserunt quisquam maxime officiis reiciendis laudantium voluptatibus ipsum tempore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minus et sit nobis harum optio
+                    eum praesentium commodi cum totam...
+                </p>
+
+                <a href="./contact.html"><button type="button" class="btn btn-dark btn-outline-light my-3"
+                        data-bs-toggle="tooltip" data-bs-title="Contact us">Contact</button></a>
+            </div>
+
+            <!-- Column for image -->
+            <div class="col-12 col-lg-6 col-md-12 d-flex flex-column justify-content-start  align-items-center mt-5">
+                <h2 class="pb-2">Enquiry Form</h2>
+                <form id="form" method="post" action="" class="enquiry shadow-lg">
+                    <div class="form-group">
+                        <label class="mb-1" for="name" style="font-weight: bold;">Your Name :</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name"
+                            style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 100%;">
+            
+                    </div>
+                    <div class="form-group">
+                        <label class="mb-1" for="email" style="font-weight: bold;">Your Address :</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter Date Of Birth" name="dob"
+                            style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 100%;">
+            
+                    </div>
+                    <div class="form-group">
+                        <label class="mb-1" for="phone" style="font-weight: bold;">Member :</label>
+                        <select name="class" id="class" class="d-block"
+                            style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 100%;">
+                            <option value="">1 to 2</option>
+                            <option value="">3 to 5</option>
+                            <option value="prep">Above 5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="mb-1" for="phone" style="font-weight: bold;">Place To Visit :</label>
+                        <select name="class" id="class" class="d-block"
+                            style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 100%;">
+                            <option value="">Jodhpur</option>
+                            <option value="">Jaisalmer</option>
+                            <option value="prep">Savai Bandh</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="mb-1" for="name" style="font-weight: bold;">Your Email :</label>
+                        <input type="email" class="form-control" id="name" placeholder="Enter Email" name="fname"
+                            style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 100%;">
+            
+                    </div>
+                    <div class="form-group">
+                        <label class="mb-1" for="phone" style="font-weight: bold;">Your Phone :</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone"
+                            style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 100%;">
+            
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark mb-3" name="submit"
+                        style="background-color: #333; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <h2 class="text-center text-dark pt-5">The Jodhpur</h2>
+        <img src="./assets/img/hr.png" alt="" width="300px" class="d-block m-auto">
+        <div class="row d-flex justify-content-center p-10">
+            <div class="col-12 col-lg-4 col-md-6 col-sm-12 d-flex  flex-column justify-content-center">
+
+                <div class="m-5">
+                    <div class="text-justify">
+                        <h5 class="">Blog</h5>
+                        <p class="paragrapgh">Some quick example text to build on the Blog and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <img src="https://images.unsplash.com/photo-1724152312974-d4d48b8b36fd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="...">
+                </div>
+
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quaerat perferendis enim
+                    asperiores sed,
+                    accusantium repudiandae aspernatur aperiam modi, optio sit officia dolor? Aspernatur beatae illo
+                    omnis repudiandae
+                    modi, placeat ullam nesciunt sunt culpa sequi debitis numquam ex reprehenderit deleniti repellendus
+                    reiciendis animi
+                    natus nostrum dolorem accusamus veniam perspiciatis! Voluptatibus?Lorem ipsum dolor, sit amet
+                    consectetur
+                    adipisicing elit. Veniam placeat corporis ut alias totam, officia quod. Cum commodi suscipit
+                    architecto voluptatem
+                    laboriosam nisi impedit dignissimos id, alias quo culpa quod? Expedita nulla ea omnis, consectetur
+                    saepe labore id
+                    voluptates consequatur vero? Labore minima harum placeat ut maxime accusamus in corporis.
+                </p>
+            </div>
+
+
+
+            <div class="col-12 col-lg-4 col-md-6 col-sm-12 d-flex  flex-column justify-content-center  p-2">
+                <div class="card-body">
+                    <img src="https://images.unsplash.com/photo-1724152312974-d4d48b8b36fd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="m-5">
+                    <div class="text-justify">
+                        <h5 class="">Blog</h5>
+                        <p class="paragrapgh">Some quick example text to build on the Blog and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1724152312974-d4d48b8b36fd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="...">
+                </div>
+            </div>
+
+
+            <div class="col-12 col-lg-4 col-md-6 col-sm-12 d-flex  flex-column justify-content-center">
+                <div class="m-5">
+                    <div class="text-justify">
+                        <h5 class="">Blog</h5>
+                        <p class="paragrapgh">Some quick example text to build on the Blog and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <img src="https://images.unsplash.com/photo-1724152312974-d4d48b8b36fd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="...">
+                </div>
+
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quaerat perferendis enim
+                    asperiores sed, accusantium repudiandae aspernatur aperiam modi, optio sit officia dolor? Aspernatur
+                    beatae illo omnis repudiandae modi, placeat ullam nesciunt sunt culpa sequi debitis numquam ex
+                    reprehenderit deleniti repellendus reiciendis animi natus nostrum dolorem accusamus veniam
+                    perspiciatis! Voluptatibus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam placeat
+                    corporis ut alias totam, officia quod. Cum commodi suscipit architecto voluptatem laboriosam nisi
+                    impedit dignissimos id, alias quo culpa quod? Expedita nulla ea omnis, consectetur saepe labore id
+                    voluptates consequatur vero? Labore minima harum placeat ut maxime accusamus in corporis.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center text-dark pt-5">The Cars</h2>
+        <img src="./assets/img/hr.png" alt="" width="300px" class="d-block m-auto">
+        <div id="carouselExampleIndicators" class="carousel slide p-10" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row no-gutters border-yellow">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1651311412157-d154a456746e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="d-block w-100" alt="Slide 1 Image">
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark text-white">
+                            <div class="text-content">
+                                <h2>Title 1</h2>
+                                <p>Some descriptive text for the first slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row no-gutters border-yellow">
+                        <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark text-white">
+                            <div class="text-content">
+                                <h2>Title 2</h2>
+                                <p>Some descriptive text for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1490902931801-d6f80ca94fe4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="d-block w-100" alt="Slide 2 Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row no-gutters border-yellow">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1669254383049-449218a87b2b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="d-block w-100" alt="Slide 3 Image">
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark text-white">
+                            <div class="text-content">
+                                <h2>Title 3</h2>
+                                <p>Some descriptive text for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h2 class="text-center text-dark pt-5">Place to Visit</h2>
+        <img src="./assets/img/hr.png" alt="" width="300px" class="d-block m-auto">
+        <div class="row d-flex justify-content-center p-10">
+            <div class="d-flex justify-content-around col-12 col-lg-3 col-md-6 col-sm-12 box1">
+
+                <ul class="list d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                </ul>
+
+                <ul class="list d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-around col-12 col-lg-3 col-md-6 col-sm-12 box2">
+
+
+                <ul class="list d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                </ul>
+
+                <ul class="list d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-around col-12 col-lg-3 col-md-6 col-sm-12 box3">
+
+                <ul class="list d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                </ul>
+                <ul class="list d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-around col-12 col-lg-3 col-md-6 col-sm-12 box4">
+
+                <ul class="list d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                </ul>
+                <ul class="list d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                    <div class="d-flex mt-3 box-item">
+                        <i class="bi bi-star"></i>
+                        <li class="item mx-2">Hello</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer================================================================================================ -->
+    <section class="footer bg-dark">
+        <div class="container text-center text-md-start">
+            <div class="row pt-5 d-flex justify-content-between">
+                <div class=" col-lg-3 col-md-6">
+                    <!-- Content -->
+                    <h5 class="text-uppercase fw-bolder mb-4 text-light">
+                        <i class="fas fa-coffee "></i>Marwad Mirage
+                    </h5>
+                    <p class="text-light">
+                        Here you can use rows and columns to organize your footer content. Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+
+                <div class=" col-lg-3 col-md-6">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4 text-light">
+                        Services
+                    </h6>
+                    <p class="text-light">
+                        <a href="./coffee.php" class=" icon-span text-reset">Service 1</a>
+                    </p>
+                    <p class="text-light">
+                        <a href="./shake.php" class=" icon-span text-reset">Service 2</a>
+                    </p>
+                    <p class="text-light">
+                        <a href="./mocktail.php" class=" icon-span text-reset">Service 3</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class=" col-lg-3 col-md-6">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4 text-light">
+                        Quick links
+                    </h6>
+                    <p class="text-light">
+                        <a href="./index.php" class=" icon-span text-reset">Home</a>
+                    </p>
+                    <p class="text-light">
+                        <a href="#about-us" class=" icon-span text-reset">About Us</a>
+                    </p>
+                    <p class="text-light">
+                        <a href="./contact.php" class=" icon-span text-reset">Contact</a>
+                    </p>
+                    <p class="text-light">
+                        <a href="./contact.php" class=" icon-span text-reset">Safari</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class=" col-lg-3 col-md-6">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4 text-light">Contact</h6>
+                    <p class="text-light text-capitalize"><i class="fas fa-home"></i>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Repudiandae eaque eveniet quidem?</p>
+                    <p class="text-light">
+                        <i class="fas fa-envelope me-3"></i>
+                        demo@gmail.com
+                    </p>
+                    <p class="text-light"><i class="fas fa-phone me-3"></i> +91-xxxxxxxxxx</p>
+                    <p class="text-light"><i class="fas fa-message me-3"></i> +91-xxxxxxxxxx</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Copyright -->
+
+    <div class="text-center shadow border border-1 text-light bg-dark">
+        © 2024 Copyright:
+        <a class=" icon-span text-reset fw-bold text-light" href="https://luckyinstitute.org/">Marwad Mirage</a>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Slider -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>

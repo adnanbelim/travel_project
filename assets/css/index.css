@@ -1,0 +1,605 @@
+/* Universal CSS =====================================================================*/
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../font/Kanit-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MyCustomFontPara';
+    src: url('../font/Roboto-Regular.ttf') format('truetype');
+}
+
+h1, h2, h3, h4, h5, h5 {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+@media screen and (max-width:720px){
+    h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h5 {
+            font-size: 38px;
+        }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.btn {
+    border: 0.1px solid black;
+    font-weight: 700;
+}
+
+.btn-dark {
+    border: 0.1px solid white;
+    font-weight: 700;
+}
+
+.btn-dark:hover {
+    color: black;
+}
+
+.p-10 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/* Navbar  =========================================================================*/
+.header>i,
+span,
+.bi {
+    color: #fff;
+}
+
+.header>div>span:hover {
+    cursor: pointer;
+    color: yellow;
+    transition: ease all 0.5s;
+}
+
+.header>div>a {
+    text-decoration: none;
+}
+
+.header>div>a>i.bi-twitter:hover {
+    color: #1DA1F2;
+}
+
+.header>div>a>i.bi-facebook:hover {
+    color: #1877F2;
+}
+
+.header>div>a>i.bi-instagram:hover {
+    color: #C13584;
+}
+
+.header>div>a>i.bi-whatsapp:hover {
+    color: #C13584;
+}
+
+/* Header Tooltip */
+
+.tooltip-content {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    width: 300px;
+}
+
+.tooltip-content i {
+    margin-right: 5px;
+}
+
+.custom-btn {
+    align-items: end;
+    background-color: #ffffff;
+    border-radius: 100px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: ease all 0.3s;
+    border: 1px solid black;
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+    background-color: #000000;
+    color: #ffffff;
+    border: 0;
+}
+
+.custom-btn:active {
+    background: #000000;
+    color: rgb(255, 255, 255, .7);
+}
+
+.text-color {
+    color: #fff
+}
+
+.nav-link.active,
+.nav-link:hover,
+.nav-link.active:hover {
+    color: #000000 !important;
+    font-weight: bolder;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 2px;
+    background-color: #000000;
+    transform: translateX(-50%);
+}
+
+.navbar-toggler {
+    position: relative;
+    width: 30px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar-toggler .bar {
+    height: 2px;
+    margin: 2px auto;
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler .bar:nth-child(1) {
+    width: 24px;
+}
+
+.navbar-toggler .bar:nth-child(2) {
+    width: 18px;
+}
+
+.navbar-toggler .bar:nth-child(3) {
+    width: 12px;
+}
+
+.slider-container {
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffd100;
+    font-size: 22px;
+}
+
+.slider-content {
+
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+    width: max-content;
+    /* Ensures the slider content expands to full width */
+    transform: translateX(0);
+    /* Start from the left */
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+        float: none;
+        display: block;
+    }
+}
+
+.navbar-nav>li>a {
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #000000;
+}
+
+/* Slider ====================================================================== */
+
+
+.carousel-item img {
+    height: 300px
+}
+
+.section {
+    width: 100%;
+    height: 80vh;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.slide-image {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: calc(100% + 400px);
+    height: calc(100% + 400px);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.slide-title {
+    font-size: 4rem;
+    line-height: 1;
+    max-width: 50%;
+    white-space: normal;
+    word-break: break-word;
+    color: #FFF;
+    z-index: 100;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+@media (min-width: 45em) {
+    .slide-title {
+        font-size: 7vw;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width : 720px) {
+    .slide-title {
+        font-size: 26px;
+    }
+}
+
+.slide-title span {
+    white-space: pre;
+    display: inline-block;
+    opacity: 0;
+}
+
+.slideshow {
+    position: relative;
+}
+
+.slideshow-pagination {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: .3s opacity;
+    z-index: 10;
+}
+
+.slideshow-pagination-item {
+    display: flex;
+    align-items: center;
+}
+
+.slideshow-pagination-item .pagination-number {
+    opacity: 0.5;
+}
+
+.slideshow-pagination-item:hover,
+.slideshow-pagination-item:focus {
+    cursor: pointer;
+}
+
+.slideshow-pagination-item:last-of-type .pagination-separator {
+    width: 0;
+}
+
+.slideshow-pagination-item.active .pagination-number {
+    opacity: 1;
+}
+
+.slideshow-pagination-item.active .pagination-separator {
+    width: 10vw;
+}
+
+.slideshow-navigation-button {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 5rem;
+    z-index: 1000;
+    transition: all .3s ease;
+    color: #FFF;
+}
+
+.slideshow-navigation-button:hover,
+.slideshow-navigation-button:focus {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slideshow-navigation-button.prev {
+    left: 0;
+}
+
+.slideshow-navigation-button.next {
+    right: 0;
+}
+
+.pagination-number {
+    font-size: 1.8rem;
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 0.5rem;
+}
+
+.pagination-separator {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.25);
+    transition: all .3s ease;
+}
+
+@media (min-width: 45em) {
+    .pagination-separator {
+        display: block;
+    }
+}
+
+.pagination-separator-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    transform-origin: 0 0;
+}
+
+/* Why Choose Us ======================================================== */
+
+.form-control,
+#class {
+    width: 250px !important;
+}
+
+.paragraph {
+    line-height: 2.5rem;
+}
+
+.choose {
+    border-right: 10px solid yellow;
+}
+
+@media screen and (max-width:720px) {
+    .choose {
+        border: none;
+    }
+}
+
+.enquiry {
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:720px){
+    .enquiry {
+            padding: 20px;
+        }
+}
+
+/* Car Details =================================================== */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.border-yellow {
+    border: 2px solid yellow;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.carousel-indicators button {
+    background-color: black !important;
+}
+
+.carousel-indicators .active {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Card Place======================================================================= */
+.box1,
+.box2,
+.box3,
+.box4 {
+    height: 300px;
+    width: 300px;
+    margin: 50px auto;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px black;
+    display: block;
+}
+
+.box1 {
+    background-color: #C13584;
+}
+
+.box2 {
+    background-color: #1DA1F2;
+}
+
+.box3 {
+    background-color: #ffd100;
+}
+
+.box4 {
+    background-color: yellowgreen;
+}
+
+.item {
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.box-item .item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+    border: 2px solid white;
+    color: black;
+    transition: all ease 0.5s;
+    transform: scale(1.2);
+}
+
+/* Side Icon============================================================================= */
+
+
+ .side_bar {
+     position: fixed;
+     right: 0;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 60px;
+     height: 200px;
+     background-color: #202020;
+     color: #fff;
+     overflow: hidden;
+     transition: width .3s ease;
+     box-shadow: 4px 7px 10px rgba(0, 0, 0, .4);
+     z-index: 100;
+ }
+
+ .side_bar:hover {
+     width: 200px;
+ }
+
+ .bar {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .nav__item {
+     position: relative;
+ }
+
+ .icon-link {
+     display: block;
+     color: #fff;
+     text-align: center;
+     padding: 20px;
+     transition: color .3s ease;
+     text-decoration: none;
+ }
+
+ .icon-link i {
+     font-size: 24px;
+     display: block;
+ }
+
+ .icon-link::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 60px;
+     white-space: nowrap;
+     background-color: #202020;
+     color: #fff;
+     padding: 10px;
+     border-radius: 4px;
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity .3s ease, left .3s ease;
+     width: 150px;
+     top: 50%;
+     transform: translateY(-50%);
+     font-size: 14px;
+     z-index: 1;
+ }
+
+ .side_bar:hover .icon-link::after {
+     opacity: 1;
+     visibility: visible;
+     left: 60px;
+ }
+
+ .icon-link:hover {
+     color: #54a4ff;
+     /* Change icon color on hover */
+ }
+
